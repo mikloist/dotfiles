@@ -82,11 +82,11 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}%  ",
+        "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}%  "
+        "format": "{}% "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -99,7 +99,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "]
+        "format-icons": ["", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -109,7 +109,7 @@
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% 🗲",
-        "format-plugged": "{capacity}%  ",
+        "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -146,13 +146,17 @@
         },
     },
     "custom/vpn": {
-        "format": "{text}",
+        "format": "{icon}",
         "return-type": "json",
         "exec": "~/.config/waybar/scripts/vpn-connector.sh wg0 display",
         "on-click": "~/.config/waybar/scripts/vpn-connector.sh wg0 toggle",
         "interval": 5,
         "tooltip": true,
-        "signal": 8
+        "signal": 8,
+        "format-icons":{
+          "on": "", 
+          "off": "" 
+        }
   },
   "custom/power": {
     "format": "⏻",

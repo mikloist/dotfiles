@@ -21,7 +21,7 @@
 }
 
 #waybar {
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Sauce CodePro Nerd Font';
 	font-size: 1.2em;
 	font-weight: 400;
   color: @base04;
@@ -103,7 +103,6 @@
 #window {
   font-size: 0.9em;
 	font-weight: 400;
-	font-family: sans-serif;
 }
 
 #language {

@@ -8,9 +8,9 @@ is_vpn_connected() {
 
 display() {
   if is_vpn_connected $1; then
-      echo "{\"text\":\"\",\"tooltip\":\"$1 is connected\",\"class\":\"connected\"}"
+      echo "{\"text\": \"$1 is connected\",\"alt\":\"on\",\"tooltip\":\"$1 is connected\",\"class\":\"connected\"}"
   else
-      echo "{\"text\":\" \",\"tooltip\":\"$1 is disconnected\",\"class\":\"disconnected\"}"
+      echo "{\"text\":\"$1 is disconnected\",\"alt\":\"off\",\"tooltip\":\"$1 is disconnected\",\"class\":\"disconnected\"}"
   fi
 }
 
